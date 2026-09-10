@@ -1,9 +1,12 @@
+import { useLocalSearchParams } from "expo-router";
 import { ScrollView, StyleSheet } from "react-native";
 
 
 
 export default function Details() {
 
+  const params = useLocalSearchParams()
+  console.log(params.name)
 
   return (
     <ScrollView
